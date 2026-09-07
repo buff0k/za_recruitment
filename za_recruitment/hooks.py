@@ -8,7 +8,7 @@ app_license = "mit"
 # Apps
 # ------------------
 
-# required_apps = []
+required_apps = ["hrms"]
 
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
@@ -88,6 +88,44 @@ app_license = "mit"
 # before_install = "za_recruitment.install.before_install"
 # after_install = "za_recruitment.install.after_install"
 
+# Fixtures
+# ------------
+# Idempotently installed/updated master data on `bench migrate`.
+# No Role fixtures here by design — this app reuses HRMS's existing
+# System Manager / HR Manager / HR User roles rather than defining new ones.
+
+fixtures = [
+	{"dt": "ZA Education Level"},
+	{"dt": "ZA Recruitment Portal"},
+	{"dt": "ZA Attachment Type"},
+	{
+		"dt": "Job Applicant Source",
+		"filters": [
+			[
+				"name",
+				"in",
+				[
+					"Public CV Portal",
+					"Recruitment Email",
+					"SharePoint",
+					"Walk In",
+					"Recruitment Office",
+					"Employee Referral",
+					"Recruitment Agency",
+					"LinkedIn",
+					"CareerJunction",
+					"PNet",
+					"Indeed",
+					"Internal Recruitment",
+					"Bulk CV Import",
+					"Historical Import",
+					"Other",
+				],
+			]
+		],
+	},
+]
+
 # Uninstallation
 # ------------
 
@@ -149,23 +187,11 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"za_recruitment.tasks.all"
-# 	],
-# 	"daily": [
-# 		"za_recruitment.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"za_recruitment.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"za_recruitment.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"za_recruitment.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+	"daily": [
+		"za_recruitment.geography.notifications.send_unmapped_geographic_area_reminder",
+	],
+}
 
 # Testing
 # -------

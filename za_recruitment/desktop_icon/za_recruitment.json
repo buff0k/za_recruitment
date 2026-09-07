@@ -1,0 +1,21 @@
+{
+ "app": "za_recruitment",
+ "bg_color": "gray",
+ "creation": "2026-08-18 16:01:39.415418",
+ "docstatus": 0,
+ "doctype": "Desktop Icon",
+ "hidden": 0,
+ "icon_type": "App",
+ "idx": 0,
+ "label": "ZA Recruitment",
+ "link_to": "ZA Recruitment",
+ "link_type": "Workspace Sidebar",
+ "modified": "2026-08-18 16:01:57.454084",
+ "modified_by": "Administrator",
+ "name": "ZA Recruitment",
+ "owner": "Administrator",
+ "restrict_removal": 0,
+ "roles": [],
+ "sidebar": "ZA Recruitment",
+ "standard": 1
+}

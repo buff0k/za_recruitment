@@ -1,0 +1,350 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-08-18 09:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "source_section",
+  "source_type",
+  "recruitment_source",
+  "received_on",
+  "column_break_src_1",
+  "original_filename",
+  "original_reference",
+  "external_references_section",
+  "email_message_id",
+  "email_attachment_id",
+  "sharepoint_item_id",
+  "column_break_ext_1",
+  "sharepoint_drive_id",
+  "sharepoint_folder",
+  "upload_session_id",
+  "temp_file_section",
+  "file_size",
+  "mime_type",
+  "sha_256",
+  "extraction_method",
+  "content_safety_section",
+  "prompt_injection_suspected",
+  "prompt_injection_indicators",
+  "candidate_matching_section",
+  "candidate",
+  "match_result",
+  "match_confidence",
+  "column_break_match_1",
+  "possible_duplicate",
+  "duplicate_of_candidate",
+  "duplicate_cv",
+  "duplicate_cv_record",
+  "attachments_section",
+  "attachments",
+  "processing_section",
+  "status",
+  "processing_stage",
+  "accepted",
+  "column_break_proc_1",
+  "rejection_reason",
+  "error",
+  "retry_count",
+  "processing_started",
+  "processing_completed"
+ ],
+ "fields": [
+  {
+   "fieldname": "source_section",
+   "fieldtype": "Section Break",
+   "label": "Source"
+  },
+  {
+   "fieldname": "source_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Source Type",
+   "options": "Web\nEmail\nSharePoint\nManual\nBulk Upload\nAPI\nMigration",
+   "reqd": 1
+  },
+  {
+   "fieldname": "recruitment_source",
+   "fieldtype": "Link",
+   "label": "Recruitment Source",
+   "options": "Job Applicant Source"
+  },
+  {
+   "fieldname": "received_on",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Received On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_src_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "original_filename",
+   "fieldtype": "Data",
+   "label": "Original Filename"
+  },
+  {
+   "fieldname": "original_reference",
+   "fieldtype": "Data",
+   "label": "Original Reference"
+  },
+  {
+   "fieldname": "external_references_section",
+   "fieldtype": "Section Break",
+   "label": "External References"
+  },
+  {
+   "fieldname": "email_message_id",
+   "fieldtype": "Data",
+   "label": "Email Message ID"
+  },
+  {
+   "fieldname": "email_attachment_id",
+   "fieldtype": "Data",
+   "label": "Email Attachment ID"
+  },
+  {
+   "fieldname": "sharepoint_item_id",
+   "fieldtype": "Data",
+   "label": "SharePoint Item ID"
+  },
+  {
+   "fieldname": "column_break_ext_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sharepoint_drive_id",
+   "fieldtype": "Data",
+   "label": "SharePoint Drive ID"
+  },
+  {
+   "fieldname": "sharepoint_folder",
+   "fieldtype": "Data",
+   "label": "SharePoint Folder"
+  },
+  {
+   "fieldname": "upload_session_id",
+   "fieldtype": "Data",
+   "label": "Upload Session ID"
+  },
+  {
+   "fieldname": "temp_file_section",
+   "fieldtype": "Section Break",
+   "label": "Temporary File Metadata"
+  },
+  {
+   "fieldname": "file_size",
+   "fieldtype": "Int",
+   "label": "File Size (Bytes)"
+  },
+  {
+   "fieldname": "mime_type",
+   "fieldtype": "Data",
+   "label": "MIME Type"
+  },
+  {
+   "fieldname": "sha_256",
+   "fieldtype": "Data",
+   "label": "SHA-256"
+  },
+  {
+   "fieldname": "extraction_method",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Extraction Method",
+   "options": "\nText Layer\nOCR\nMixed\nDOCX\nUnsupported",
+   "read_only": 1
+  },
+  {
+   "description": "Populated by za_recruitment.ai.prompt_injection before any AI call — flags hidden/invisible PDF text and known prompt-injection phrasing found in this submission, independently of what any AI later reports.",
+   "fieldname": "content_safety_section",
+   "fieldtype": "Section Break",
+   "label": "Content Safety"
+  },
+  {
+   "fieldname": "prompt_injection_suspected",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Prompt Injection Suspected",
+   "read_only": 1
+  },
+  {
+   "fieldname": "prompt_injection_indicators",
+   "fieldtype": "Small Text",
+   "label": "Prompt Injection Indicators",
+   "read_only": 1
+  },
+  {
+   "fieldname": "candidate_matching_section",
+   "fieldtype": "Section Break",
+   "label": "Candidate Matching"
+  },
+  {
+   "fieldname": "candidate",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Candidate",
+   "options": "ZA Candidate"
+  },
+  {
+   "fieldname": "match_result",
+   "fieldtype": "Select",
+   "label": "Match Result",
+   "options": "\nNew Candidate\nConfirmed Existing Candidate\nProbable Existing Candidate\nPossible Duplicate"
+  },
+  {
+   "fieldname": "match_confidence",
+   "fieldtype": "Float",
+   "label": "Match Confidence"
+  },
+  {
+   "fieldname": "column_break_match_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "possible_duplicate",
+   "fieldtype": "Check",
+   "label": "Possible Duplicate"
+  },
+  {
+   "fieldname": "duplicate_of_candidate",
+   "fieldtype": "Link",
+   "label": "Duplicate Of Candidate",
+   "options": "ZA Candidate"
+  },
+  {
+   "fieldname": "duplicate_cv",
+   "fieldtype": "Check",
+   "label": "Duplicate CV"
+  },
+  {
+   "fieldname": "duplicate_cv_record",
+   "fieldtype": "Link",
+   "label": "Duplicate CV Record",
+   "options": "ZA Candidate CV"
+  },
+  {
+   "fieldname": "attachments_section",
+   "fieldtype": "Section Break",
+   "label": "Attachments"
+  },
+  {
+   "description": "Point-in-time record of what za_recruitment.ingestion.attachment_classifier found in this specific upload. ZA Candidate holds its own independent copy of the same findings as the live/working list used during onboarding -- editing one does not update the other.",
+   "fieldname": "attachments",
+   "fieldtype": "Table",
+   "label": "Attachments",
+   "options": "ZA Candidate Attachment"
+  },
+  {
+   "fieldname": "processing_section",
+   "fieldtype": "Section Break",
+   "label": "Processing"
+  },
+  {
+   "default": "Received",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Received\nValidating\nDuplicate Check\nCandidate Matching\nAccepted\nRejected\nDuplicate\nReview Required\nProcessing\nCompleted\nFailed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "processing_stage",
+   "fieldtype": "Data",
+   "label": "Processing Stage",
+   "read_only": 1
+  },
+  {
+   "fieldname": "accepted",
+   "fieldtype": "Check",
+   "label": "Accepted",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_proc_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rejection_reason",
+   "fieldtype": "Small Text",
+   "label": "Rejection Reason"
+  },
+  {
+   "fieldname": "error",
+   "fieldtype": "Small Text",
+   "label": "Error",
+   "read_only": 1
+  },
+  {
+   "fieldname": "retry_count",
+   "fieldtype": "Int",
+   "label": "Retry Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "processing_started",
+   "fieldtype": "Datetime",
+   "label": "Processing Started",
+   "read_only": 1
+  },
+  {
+   "fieldname": "processing_completed",
+   "fieldtype": "Datetime",
+   "label": "Processing Completed",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-08-19 19:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "ZA Recruitment",
+ "name": "ZA Recruitment Ingestion",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

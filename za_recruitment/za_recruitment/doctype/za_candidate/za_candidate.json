@@ -1,0 +1,567 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "ZA-CAND-.######",
+ "creation": "2026-08-18 09:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "identity_tab",
+  "first_names",
+  "surname",
+  "preferred_name",
+  "initials",
+  "column_break_id_1",
+  "date_of_birth",
+  "sa_id_number",
+  "id_number_hash",
+  "passport_number",
+  "passport_hash",
+  "passport_country",
+  "contact_tab",
+  "primary_email",
+  "normalized_email",
+  "alternate_email",
+  "column_break_contact_1",
+  "mobile_number",
+  "normalized_mobile",
+  "alternate_mobile",
+  "demographics_tab",
+  "gender",
+  "race",
+  "disability_status",
+  "column_break_demo_1",
+  "citizenship",
+  "languages",
+  "work_permit_required",
+  "work_permit_expiry",
+  "education_tab",
+  "highest_education_level",
+  "highest_nqf_level",
+  "education_verified",
+  "address_tab",
+  "physical_address",
+  "address_line_1",
+  "address_line_2",
+  "column_break_addr_1",
+  "suburb_township",
+  "town_city",
+  "municipality",
+  "province",
+  "postal_code",
+  "section_break_addr_2",
+  "geographic_area",
+  "geographic_match_confidence",
+  "column_break_addr_3",
+  "geographic_match_method",
+  "geographic_match_reviewed",
+  "status_tab",
+  "candidate_status",
+  "dates_tab",
+  "first_received",
+  "last_submission",
+  "last_cv_update",
+  "column_break_dates_1",
+  "last_recruitment_activity",
+  "stale_since",
+  "retention_until",
+  "compliance_tab",
+  "popia_accepted",
+  "popia_accepted_on",
+  "popia_version",
+  "column_break_comp_1",
+  "future_opportunities_consent",
+  "future_opportunities_consent_date",
+  "section_break_comp_2",
+  "legal_hold",
+  "legal_hold_reason",
+  "matching_tab",
+  "candidate_fingerprint",
+  "identity_confidence",
+  "duplicate_review_required",
+  "attachments_tab",
+  "attachments"
+ ],
+ "fields": [
+  {
+   "fieldname": "identity_tab",
+   "fieldtype": "Tab Break",
+   "label": "Identity"
+  },
+  {
+   "columns": 3,
+   "fieldname": "first_names",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Names",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "surname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Surname",
+   "reqd": 1
+  },
+  {
+   "fieldname": "preferred_name",
+   "fieldtype": "Data",
+   "label": "Preferred Name"
+  },
+  {
+   "fieldname": "initials",
+   "fieldtype": "Data",
+   "label": "Initials"
+  },
+  {
+   "fieldname": "column_break_id_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "sa_id_number",
+   "fieldtype": "Data",
+   "label": "South African ID Number"
+  },
+  {
+   "fieldname": "id_number_hash",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "ID Number Hash",
+   "read_only": 1
+  },
+  {
+   "fieldname": "passport_number",
+   "fieldtype": "Data",
+   "label": "Passport Number"
+  },
+  {
+   "fieldname": "passport_hash",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Passport Hash",
+   "read_only": 1
+  },
+  {
+   "fieldname": "passport_country",
+   "fieldtype": "Link",
+   "label": "Passport Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "contact_tab",
+   "fieldtype": "Tab Break",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "primary_email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Primary Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "normalized_email",
+   "fieldtype": "Data",
+   "label": "Normalized Email",
+   "read_only": 1
+  },
+  {
+   "fieldname": "alternate_email",
+   "fieldtype": "Data",
+   "label": "Alternate Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "column_break_contact_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "normalized_mobile",
+   "fieldtype": "Data",
+   "label": "Normalized Mobile",
+   "read_only": 1
+  },
+  {
+   "fieldname": "alternate_mobile",
+   "fieldtype": "Data",
+   "label": "Alternate Mobile"
+  },
+  {
+   "fieldname": "demographics_tab",
+   "fieldtype": "Tab Break",
+   "label": "South African Demographics"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "race",
+   "fieldtype": "Select",
+   "label": "Race / Population Group",
+   "options": "\nAfrican\nColoured\nIndian\nWhite\nOther\nPrefer Not To Say",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "disability_status",
+   "fieldtype": "Select",
+   "label": "Disability Status",
+   "options": "\nNone\nDisabled\nPrefer Not To Say",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "column_break_demo_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "South African",
+   "fieldname": "citizenship",
+   "fieldtype": "Data",
+   "label": "Citizenship"
+  },
+  {
+   "fieldname": "languages",
+   "fieldtype": "Data",
+   "label": "Languages",
+   "description": "Free text as stated on the CV, e.g. \"IsiZulu & English\" -- not a structured multi-select."
+  },
+  {
+   "fieldname": "work_permit_required",
+   "fieldtype": "Check",
+   "label": "Work Permit Required"
+  },
+  {
+   "depends_on": "eval:doc.work_permit_required",
+   "fieldname": "work_permit_expiry",
+   "fieldtype": "Date",
+   "label": "Work Permit Expiry"
+  },
+  {
+   "fieldname": "education_tab",
+   "fieldtype": "Tab Break",
+   "label": "Education"
+  },
+  {
+   "fieldname": "highest_education_level",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Highest Education Level",
+   "options": "ZA Education Level"
+  },
+  {
+   "fieldname": "highest_nqf_level",
+   "fieldtype": "Int",
+   "label": "Highest NQF Level",
+   "read_only": 1
+  },
+  {
+   "fieldname": "education_verified",
+   "fieldtype": "Check",
+   "label": "Education Verified"
+  },
+  {
+   "fieldname": "address_tab",
+   "fieldtype": "Tab Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "physical_address",
+   "fieldtype": "Small Text",
+   "label": "Physical Address"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "address_line_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "column_break_addr_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "suburb_township",
+   "fieldtype": "Data",
+   "label": "Suburb / Township"
+  },
+  {
+   "fieldname": "town_city",
+   "fieldtype": "Data",
+   "label": "Town / City"
+  },
+  {
+   "fieldname": "municipality",
+   "fieldtype": "Data",
+   "label": "Municipality"
+  },
+  {
+   "fieldname": "province",
+   "fieldtype": "Select",
+   "label": "Province",
+   "options": "\nEastern Cape\nFree State\nGauteng\nKwaZulu-Natal\nLimpopo\nMpumalanga\nNorthern Cape\nNorth West\nWestern Cape"
+  },
+  {
+   "fieldname": "postal_code",
+   "fieldtype": "Data",
+   "label": "Postal Code"
+  },
+  {
+   "fieldname": "section_break_addr_2",
+   "fieldtype": "Section Break",
+   "label": "Geographic Match"
+  },
+  {
+   "fieldname": "geographic_area",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Geographic Area",
+   "options": "ZA Geographic Area"
+  },
+  {
+   "fieldname": "geographic_match_confidence",
+   "fieldtype": "Float",
+   "label": "Geographic Match Confidence"
+  },
+  {
+   "fieldname": "column_break_addr_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "geographic_match_method",
+   "fieldtype": "Data",
+   "label": "Geographic Match Method",
+   "read_only": 1
+  },
+  {
+   "fieldname": "geographic_match_reviewed",
+   "fieldtype": "Check",
+   "label": "Geographic Match Reviewed"
+  },
+  {
+   "fieldname": "status_tab",
+   "fieldtype": "Tab Break",
+   "label": "Candidate Status"
+  },
+  {
+   "default": "Active",
+   "fieldname": "candidate_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Candidate Status",
+   "options": "Active\nAvailable\nUnder Consideration\nEmployed\nNot Available\nStale\nArchived\nRestricted\nDeletion Requested",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dates_tab",
+   "fieldtype": "Tab Break",
+   "label": "Dates"
+  },
+  {
+   "fieldname": "first_received",
+   "fieldtype": "Date",
+   "label": "First Received",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_submission",
+   "fieldtype": "Date",
+   "label": "Last Submission",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_cv_update",
+   "fieldtype": "Date",
+   "label": "Last CV Update",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_dates_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_recruitment_activity",
+   "fieldtype": "Date",
+   "label": "Last Recruitment Activity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stale_since",
+   "fieldtype": "Date",
+   "label": "Stale Since",
+   "read_only": 1
+  },
+  {
+   "fieldname": "retention_until",
+   "fieldtype": "Date",
+   "label": "Retention Until"
+  },
+  {
+   "fieldname": "compliance_tab",
+   "fieldtype": "Tab Break",
+   "label": "Compliance"
+  },
+  {
+   "fieldname": "popia_accepted",
+   "fieldtype": "Check",
+   "label": "POPIA Accepted",
+   "read_only": 1
+  },
+  {
+   "fieldname": "popia_accepted_on",
+   "fieldtype": "Datetime",
+   "label": "POPIA Accepted On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "popia_version",
+   "fieldtype": "Data",
+   "label": "POPIA Version / Snapshot",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_comp_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "future_opportunities_consent",
+   "fieldtype": "Check",
+   "label": "Future Opportunities Consent"
+  },
+  {
+   "fieldname": "future_opportunities_consent_date",
+   "fieldtype": "Date",
+   "label": "Future Opportunities Consent Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_comp_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "legal_hold",
+   "fieldtype": "Check",
+   "label": "Legal Hold"
+  },
+  {
+   "depends_on": "eval:doc.legal_hold",
+   "fieldname": "legal_hold_reason",
+   "fieldtype": "Small Text",
+   "label": "Legal Hold Reason"
+  },
+  {
+   "fieldname": "matching_tab",
+   "fieldtype": "Tab Break",
+   "label": "Matching"
+  },
+  {
+   "fieldname": "candidate_fingerprint",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Candidate Fingerprint",
+   "read_only": 1
+  },
+  {
+   "fieldname": "identity_confidence",
+   "fieldtype": "Float",
+   "label": "Identity Confidence",
+   "read_only": 1
+  },
+  {
+   "fieldname": "duplicate_review_required",
+   "fieldtype": "Check",
+   "label": "Duplicate Review Required",
+   "read_only": 1
+  },
+  {
+   "fieldname": "attachments_tab",
+   "fieldtype": "Tab Break",
+   "label": "Attachments"
+  },
+  {
+   "description": "CVs frequently bundle supporting documents (ID, qualifications, licences, proof of residence) into the same upload -- za_recruitment.ingestion.attachment_classifier detects and lists them here automatically. This is the live/working copy HR uses during onboarding; ZA Recruitment Ingestion holds its own independent copy as a point-in-time record of each specific upload -- editing one does not update the other.",
+   "fieldname": "attachments",
+   "fieldtype": "Table",
+   "label": "Attachments",
+   "options": "ZA Candidate Attachment"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-08-20 09:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "ZA Recruitment",
+ "name": "ZA Candidate",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "permlevel": 1,
+   "read": 1,
+   "role": "System Manager",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "permlevel": 1,
+   "read": 1,
+   "role": "HR Manager",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

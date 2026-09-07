@@ -1,0 +1,137 @@
+[
+ {
+  "creation": "2026-08-18 09:00:00.000000",
+  "doctype": "Job Applicant Source",
+  "modified": "2026-08-18 09:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "Public CV Portal",
+  "owner": "Administrator",
+  "source_name": "Public CV Portal"
+ },
+ {
+  "creation": "2026-08-18 09:00:00.000000",
+  "doctype": "Job Applicant Source",
+  "modified": "2026-08-18 09:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "Recruitment Email",
+  "owner": "Administrator",
+  "source_name": "Recruitment Email"
+ },
+ {
+  "creation": "2026-08-18 09:00:00.000000",
+  "doctype": "Job Applicant Source",
+  "modified": "2026-08-18 09:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "SharePoint",
+  "owner": "Administrator",
+  "source_name": "SharePoint"
+ },
+ {
+  "creation": "2026-08-18 09:00:00.000000",
+  "doctype": "Job Applicant Source",
+  "modified": "2026-08-18 09:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "Walk In",
+  "owner": "Administrator",
+  "source_name": "Walk In"
+ },
+ {
+  "creation": "2026-08-18 09:00:00.000000",
+  "doctype": "Job Applicant Source",
+  "modified": "2026-08-18 09:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "Recruitment Office",
+  "owner": "Administrator",
+  "source_name": "Recruitment Office"
+ },
+ {
+  "creation": "2026-08-18 09:00:00.000000",
+  "doctype": "Job Applicant Source",
+  "modified": "2026-08-18 09:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "Employee Referral",
+  "owner": "Administrator",
+  "source_name": "Employee Referral"
+ },
+ {
+  "creation": "2026-08-18 09:00:00.000000",
+  "doctype": "Job Applicant Source",
+  "modified": "2026-08-18 09:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "Recruitment Agency",
+  "owner": "Administrator",
+  "source_name": "Recruitment Agency"
+ },
+ {
+  "creation": "2026-08-18 09:00:00.000000",
+  "doctype": "Job Applicant Source",
+  "modified": "2026-08-18 09:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "LinkedIn",
+  "owner": "Administrator",
+  "source_name": "LinkedIn"
+ },
+ {
+  "creation": "2026-08-18 09:00:00.000000",
+  "doctype": "Job Applicant Source",
+  "modified": "2026-08-18 09:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "CareerJunction",
+  "owner": "Administrator",
+  "source_name": "CareerJunction"
+ },
+ {
+  "creation": "2026-08-18 09:00:00.000000",
+  "doctype": "Job Applicant Source",
+  "modified": "2026-08-18 09:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "PNet",
+  "owner": "Administrator",
+  "source_name": "PNet"
+ },
+ {
+  "creation": "2026-08-18 09:00:00.000000",
+  "doctype": "Job Applicant Source",
+  "modified": "2026-08-18 09:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "Indeed",
+  "owner": "Administrator",
+  "source_name": "Indeed"
+ },
+ {
+  "creation": "2026-08-18 09:00:00.000000",
+  "doctype": "Job Applicant Source",
+  "modified": "2026-08-18 09:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "Internal Recruitment",
+  "owner": "Administrator",
+  "source_name": "Internal Recruitment"
+ },
+ {
+  "creation": "2026-08-18 09:00:00.000000",
+  "doctype": "Job Applicant Source",
+  "modified": "2026-08-18 09:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "Bulk CV Import",
+  "owner": "Administrator",
+  "source_name": "Bulk CV Import"
+ },
+ {
+  "creation": "2026-08-18 09:00:00.000000",
+  "doctype": "Job Applicant Source",
+  "modified": "2026-08-18 09:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "Historical Import",
+  "owner": "Administrator",
+  "source_name": "Historical Import"
+ },
+ {
+  "creation": "2026-08-18 09:00:00.000000",
+  "doctype": "Job Applicant Source",
+  "modified": "2026-08-18 09:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "Other",
+  "owner": "Administrator",
+  "source_name": "Other"
+ }
+]

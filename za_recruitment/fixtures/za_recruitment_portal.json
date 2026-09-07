@@ -1,0 +1,100 @@
+[
+ {
+  "active": 1,
+  "creation": "2026-08-18 09:00:00.000000",
+  "doctype": "ZA Recruitment Portal",
+  "modified": "2026-08-18 09:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "PNet",
+  "owner": "Administrator",
+  "portal_name": "PNet",
+  "website": "https://www.pnet.co.za"
+ },
+ {
+  "active": 1,
+  "creation": "2026-08-18 09:00:00.000000",
+  "doctype": "ZA Recruitment Portal",
+  "modified": "2026-08-18 09:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "CareerJunction",
+  "owner": "Administrator",
+  "portal_name": "CareerJunction",
+  "website": "https://www.careerjunction.co.za"
+ },
+ {
+  "active": 1,
+  "creation": "2026-08-18 09:00:00.000000",
+  "doctype": "ZA Recruitment Portal",
+  "modified": "2026-08-18 09:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "Careers24",
+  "owner": "Administrator",
+  "portal_name": "Careers24",
+  "website": "https://www.careers24.com"
+ },
+ {
+  "active": 1,
+  "creation": "2026-08-18 09:00:00.000000",
+  "doctype": "ZA Recruitment Portal",
+  "modified": "2026-08-18 09:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "Indeed",
+  "owner": "Administrator",
+  "portal_name": "Indeed",
+  "website": "https://za.indeed.com"
+ },
+ {
+  "active": 1,
+  "creation": "2026-08-18 09:00:00.000000",
+  "doctype": "ZA Recruitment Portal",
+  "modified": "2026-08-18 09:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "LinkedIn Talent Solutions",
+  "owner": "Administrator",
+  "portal_name": "LinkedIn Talent Solutions",
+  "website": "https://www.linkedin.com/talent"
+ },
+ {
+  "active": 1,
+  "creation": "2026-08-18 09:00:00.000000",
+  "doctype": "ZA Recruitment Portal",
+  "modified": "2026-08-18 09:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "Gumtree Jobs",
+  "owner": "Administrator",
+  "portal_name": "Gumtree Jobs",
+  "website": "https://www.gumtree.co.za/s-jobs/v1c8p1"
+ },
+ {
+  "active": 1,
+  "creation": "2026-08-18 09:00:00.000000",
+  "doctype": "ZA Recruitment Portal",
+  "modified": "2026-08-18 09:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "JobMail",
+  "owner": "Administrator",
+  "portal_name": "JobMail",
+  "website": "https://www.jobmail.co.za"
+ },
+ {
+  "active": 1,
+  "creation": "2026-08-18 09:00:00.000000",
+  "doctype": "ZA Recruitment Portal",
+  "modified": "2026-08-18 09:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "Executive Placements",
+  "owner": "Administrator",
+  "portal_name": "Executive Placements",
+  "website": "https://www.executiveplacements.com"
+ },
+ {
+  "active": 1,
+  "creation": "2026-08-18 09:00:00.000000",
+  "doctype": "ZA Recruitment Portal",
+  "modified": "2026-08-18 09:00:00.000000",
+  "modified_by": "Administrator",
+  "name": "Other",
+  "owner": "Administrator",
+  "portal_name": "Other"
+ }
+]

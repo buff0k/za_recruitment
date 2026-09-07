@@ -1,0 +1,166 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:geographic_area_name",
+ "creation": "2026-08-18 09:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "geographic_area_name",
+  "code",
+  "active",
+  "column_break_geo_1",
+  "province",
+  "district_municipality",
+  "local_municipality",
+  "town",
+  "section_break_geo_2",
+  "description",
+  "column_break_geo_3",
+  "latitude",
+  "longitude",
+  "radius_km",
+  "priority",
+  "section_break_geo_4",
+  "aliases"
+ ],
+ "fields": [
+  {
+   "fieldname": "geographic_area_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Geographic Area Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Code"
+  },
+  {
+   "default": "1",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Active"
+  },
+  {
+   "fieldname": "column_break_geo_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "province",
+   "fieldtype": "Select",
+   "label": "Province",
+   "options": "\nEastern Cape\nFree State\nGauteng\nKwaZulu-Natal\nLimpopo\nMpumalanga\nNorthern Cape\nNorth West\nWestern Cape"
+  },
+  {
+   "fieldname": "district_municipality",
+   "fieldtype": "Data",
+   "label": "District Municipality"
+  },
+  {
+   "fieldname": "local_municipality",
+   "fieldtype": "Data",
+   "label": "Local Municipality"
+  },
+  {
+   "fieldname": "town",
+   "fieldtype": "Data",
+   "label": "Town"
+  },
+  {
+   "fieldname": "section_break_geo_2",
+   "fieldtype": "Section Break",
+   "label": "Detail"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_geo_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Float",
+   "label": "Latitude",
+   "precision": "6"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Float",
+   "label": "Longitude",
+   "precision": "6"
+  },
+  {
+   "fieldname": "radius_km",
+   "fieldtype": "Float",
+   "label": "Radius KM"
+  },
+  {
+   "default": "1",
+   "fieldname": "priority",
+   "fieldtype": "Int",
+   "label": "Priority"
+  },
+  {
+   "fieldname": "section_break_geo_4",
+   "fieldtype": "Section Break",
+   "label": "Aliases"
+  },
+  {
+   "fieldname": "aliases",
+   "fieldtype": "Table",
+   "label": "Aliases",
+   "options": "ZA Geographic Area Alias"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-08-18 09:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "ZA Recruitment",
+ "name": "ZA Geographic Area",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "HR User"
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

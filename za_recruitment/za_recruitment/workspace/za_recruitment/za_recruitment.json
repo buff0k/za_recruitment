@@ -1,0 +1,167 @@
+{
+ "app": "za_recruitment",
+ "charts": [],
+ "content": "[{\"id\":\"zarHeader01\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">ZA Recruitment</span>\",\"col\":12}},{\"id\":\"zarShortcut1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"ZA Recruitment Settings\",\"col\":3}},{\"id\":\"zarCard0001\",\"type\":\"card\",\"data\":{\"card_name\":\"Candidate Pool\",\"col\":4}},{\"id\":\"zarCard0002\",\"type\":\"card\",\"data\":{\"card_name\":\"Intake & Ingestion\",\"col\":4}},{\"id\":\"zarCard0003\",\"type\":\"card\",\"data\":{\"card_name\":\"Geography\",\"col\":4}},{\"id\":\"zarCard0004\",\"type\":\"card\",\"data\":{\"card_name\":\"Setup\",\"col\":4}}]",
+ "creation": "2026-08-18 09:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "users",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "ZA Recruitment",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Candidate Pool",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "ZA Candidate",
+   "link_count": 0,
+   "link_to": "ZA Candidate",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "ZA Candidate CV",
+   "link_count": 0,
+   "link_to": "ZA Candidate CV",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Intake & Ingestion",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "ZA Recruitment Ingestion",
+   "link_count": 0,
+   "link_to": "ZA Recruitment Ingestion",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "ZA Geographic Area Correction",
+   "link_count": 0,
+   "link_to": "ZA Geographic Area Correction",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Geography",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "ZA Geographic Area",
+   "link_count": 0,
+   "link_to": "ZA Geographic Area",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Setup",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "ZA Education Level",
+   "link_count": 0,
+   "link_to": "ZA Education Level",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "ZA Recruitment Portal",
+   "link_count": 0,
+   "link_to": "ZA Recruitment Portal",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "ZA Recruitment Settings",
+   "link_count": 0,
+   "link_to": "ZA Recruitment Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-08-18 09:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "ZA Recruitment",
+ "name": "ZA Recruitment",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "HR User"
+  }
+ ],
+ "sequence_id": 100.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "",
+   "label": "ZA Recruitment Settings",
+   "link_to": "ZA Recruitment Settings",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "ZA Recruitment",
+ "type": "Workspace"
+}

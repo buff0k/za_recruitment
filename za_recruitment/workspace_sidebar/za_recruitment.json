@@ -1,0 +1,26 @@
+{
+ "app": "za_recruitment",
+ "creation": "2026-08-18 16:01:15.450626",
+ "docstatus": 0,
+ "doctype": "Workspace Sidebar",
+ "idx": 0,
+ "items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Home",
+   "link_to": "ZA Recruitment",
+   "link_type": "Workspace",
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-08-18 16:01:15.450626",
+ "modified_by": "Administrator",
+ "name": "ZA Recruitment",
+ "owner": "Administrator",
+ "standard": 1,
+ "title": "ZA Recruitment"
+}

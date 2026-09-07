@@ -1,0 +1,816 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-08-18 09:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "general_tab",
+  "enabled",
+  "company",
+  "default_branch",
+  "default_source",
+  "column_break_gen_1",
+  "candidate_naming_series",
+  "enable_ai_processing",
+  "enable_geographic_matching",
+  "enable_ee_tracking",
+  "public_submission_tab",
+  "enable_public_cv_submission",
+  "public_submission_title",
+  "public_submission_intro",
+  "allow_unsolicited_cv_submission",
+  "column_break_pub_1",
+  "require_email",
+  "require_mobile",
+  "require_identity_number",
+  "require_address",
+  "require_gender",
+  "require_race",
+  "require_education_level",
+  "section_break_pub_2",
+  "maximum_upload_size_mb",
+  "allowed_file_types",
+  "popia_tab",
+  "popia_enabled",
+  "popia_title",
+  "popia_notice",
+  "popia_acceptance_text",
+  "require_popia_acceptance",
+  "column_break_popia_1",
+  "popia_retention_policy",
+  "popia_retention_period_months",
+  "popia_rejected_retention_months",
+  "popia_contact_email",
+  "popia_information_officer",
+  "section_break_popia_2",
+  "allow_candidate_future_opportunities",
+  "future_opportunities_consent_text",
+  "duplicate_detection_tab",
+  "enable_candidate_deduplication",
+  "enable_cv_hash_deduplication",
+  "candidate_auto_match_threshold",
+  "candidate_review_threshold",
+  "column_break_dup_1",
+  "email_match_weight",
+  "mobile_match_weight",
+  "identity_match_weight",
+  "name_match_weight",
+  "date_of_birth_match_weight",
+  "address_match_weight",
+  "section_break_dup_2",
+  "reject_exact_duplicate_cv",
+  "allow_updated_cv",
+  "duplicate_submission_message",
+  "geographic_matching_tab",
+  "enable_address_matching",
+  "auto_geographic_match_threshold",
+  "review_geographic_match_threshold",
+  "column_break_geomatch_1",
+  "enable_branch_area_matching",
+  "allow_ai_geographic_matching",
+  "branch_geographic_areas_tab",
+  "branch_geographic_areas",
+  "enable_unmapped_area_reminders",
+  "sharepoint_tab",
+  "enable_sharepoint_watch",
+  "sharepoint_watch_folders",
+  "recruitment_email_tab",
+  "enable_recruitment_email",
+  "recruitment_email_account",
+  "default_email_source",
+  "process_email_attachments",
+  "allowed_email_attachment_types",
+  "column_break_email_1",
+  "move_processed_email",
+  "processed_mail_folder",
+  "move_rejected_email",
+  "rejected_mail_folder",
+  "ai_configuration_tab",
+  "ai_provider",
+  "ai_endpoint",
+  "ai_model",
+  "ai_api_key",
+  "column_break_ai_1",
+  "ai_temperature",
+  "ai_timeout_seconds",
+  "ai_retry_count",
+  "section_break_ai_2",
+  "redact_pii_before_ai",
+  "exclude_demographics_from_screening",
+  "scan_for_prompt_injection",
+  "prompt_injection_action",
+  "store_raw_ai_response",
+  "store_prompt",
+  "column_break_ai_3",
+  "ai_processing_region",
+  "allow_external_ai_processing",
+  "recruitment_portal_integrations_tab",
+  "enable_recruitment_portal_integrations",
+  "portal_integrations",
+  "storage_retention_tab",
+  "enable_retention_cleanup",
+  "candidate_stale_after_months",
+  "cv_stale_after_months",
+  "delete_stale_cv_files",
+  "retain_candidate_record_after_file_deletion",
+  "column_break_store_1",
+  "temporary_upload_ttl_minutes",
+  "orphan_file_cleanup_enabled",
+  "cleanup_batch_size",
+  "legal_hold_overrides_cleanup",
+  "scheduling_tab",
+  "enable_sharepoint_polling",
+  "enable_email_polling",
+  "enable_stale_cleanup",
+  "enable_storage_audit"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_tab",
+   "fieldtype": "Tab Break",
+   "label": "General"
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "default_branch",
+   "fieldtype": "Link",
+   "label": "Default Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "default_source",
+   "fieldtype": "Link",
+   "label": "Default Source",
+   "options": "Job Applicant Source"
+  },
+  {
+   "fieldname": "column_break_gen_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "ZA-CAND-.######",
+   "description": "Informational only in this release \u2014 ZA Candidate currently uses this fixed autoname pattern.",
+   "fieldname": "candidate_naming_series",
+   "fieldtype": "Data",
+   "label": "Candidate Naming Series"
+  },
+  {
+   "fieldname": "enable_ai_processing",
+   "fieldtype": "Check",
+   "label": "Enable AI Processing"
+  },
+  {
+   "default": "1",
+   "fieldname": "enable_geographic_matching",
+   "fieldtype": "Check",
+   "label": "Enable Geographic Matching"
+  },
+  {
+   "fieldname": "enable_ee_tracking",
+   "fieldtype": "Check",
+   "label": "Enable EE Tracking"
+  },
+  {
+   "fieldname": "public_submission_tab",
+   "fieldtype": "Tab Break",
+   "label": "Public Submission"
+  },
+  {
+   "fieldname": "enable_public_cv_submission",
+   "fieldtype": "Check",
+   "label": "Enable Public CV Submission"
+  },
+  {
+   "fieldname": "public_submission_title",
+   "fieldtype": "Data",
+   "label": "Public Submission Title"
+  },
+  {
+   "fieldname": "public_submission_intro",
+   "fieldtype": "Small Text",
+   "label": "Public Submission Intro"
+  },
+  {
+   "default": "1",
+   "fieldname": "allow_unsolicited_cv_submission",
+   "fieldtype": "Check",
+   "label": "Allow Unsolicited CV Submission"
+  },
+  {
+   "fieldname": "column_break_pub_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "require_email",
+   "fieldtype": "Check",
+   "label": "Require Email"
+  },
+  {
+   "fieldname": "require_mobile",
+   "fieldtype": "Check",
+   "label": "Require Mobile"
+  },
+  {
+   "fieldname": "require_identity_number",
+   "fieldtype": "Check",
+   "label": "Require Identity Number"
+  },
+  {
+   "fieldname": "require_address",
+   "fieldtype": "Check",
+   "label": "Require Address"
+  },
+  {
+   "fieldname": "require_gender",
+   "fieldtype": "Check",
+   "label": "Require Gender"
+  },
+  {
+   "fieldname": "require_race",
+   "fieldtype": "Check",
+   "label": "Require Race"
+  },
+  {
+   "fieldname": "require_education_level",
+   "fieldtype": "Check",
+   "label": "Require Education Level"
+  },
+  {
+   "fieldname": "section_break_pub_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "10",
+   "fieldname": "maximum_upload_size_mb",
+   "fieldtype": "Int",
+   "label": "Maximum Upload Size (MB)"
+  },
+  {
+   "default": ".pdf,.doc,.docx",
+   "fieldname": "allowed_file_types",
+   "fieldtype": "Small Text",
+   "label": "Allowed File Types"
+  },
+  {
+   "fieldname": "popia_tab",
+   "fieldtype": "Tab Break",
+   "label": "POPIA"
+  },
+  {
+   "default": "1",
+   "fieldname": "popia_enabled",
+   "fieldtype": "Check",
+   "label": "POPIA Enabled"
+  },
+  {
+   "fieldname": "popia_title",
+   "fieldtype": "Data",
+   "label": "POPIA Title"
+  },
+  {
+   "fieldname": "popia_notice",
+   "fieldtype": "Text Editor",
+   "label": "POPIA Notice"
+  },
+  {
+   "fieldname": "popia_acceptance_text",
+   "fieldtype": "Small Text",
+   "label": "POPIA Acceptance Text"
+  },
+  {
+   "default": "1",
+   "fieldname": "require_popia_acceptance",
+   "fieldtype": "Check",
+   "label": "Require POPIA Acceptance"
+  },
+  {
+   "fieldname": "column_break_popia_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "popia_retention_policy",
+   "fieldtype": "Text Editor",
+   "label": "POPIA Retention Policy"
+  },
+  {
+   "default": "24",
+   "fieldname": "popia_retention_period_months",
+   "fieldtype": "Int",
+   "label": "POPIA Retention Period (Months)"
+  },
+  {
+   "default": "6",
+   "fieldname": "popia_rejected_retention_months",
+   "fieldtype": "Int",
+   "label": "POPIA Rejected Retention (Months)"
+  },
+  {
+   "fieldname": "popia_contact_email",
+   "fieldtype": "Data",
+   "label": "POPIA Contact Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "popia_information_officer",
+   "fieldtype": "Data",
+   "label": "POPIA Information Officer"
+  },
+  {
+   "fieldname": "section_break_popia_2",
+   "fieldtype": "Section Break",
+   "label": "Future Opportunities"
+  },
+  {
+   "default": "1",
+   "fieldname": "allow_candidate_future_opportunities",
+   "fieldtype": "Check",
+   "label": "Allow Candidate Future Opportunities"
+  },
+  {
+   "fieldname": "future_opportunities_consent_text",
+   "fieldtype": "Small Text",
+   "label": "Future Opportunities Consent Text"
+  },
+  {
+   "fieldname": "duplicate_detection_tab",
+   "fieldtype": "Tab Break",
+   "label": "Duplicate Detection"
+  },
+  {
+   "default": "1",
+   "fieldname": "enable_candidate_deduplication",
+   "fieldtype": "Check",
+   "label": "Enable Candidate Deduplication"
+  },
+  {
+   "default": "1",
+   "fieldname": "enable_cv_hash_deduplication",
+   "fieldtype": "Check",
+   "label": "Enable CV Hash Deduplication"
+  },
+  {
+   "default": "90",
+   "fieldname": "candidate_auto_match_threshold",
+   "fieldtype": "Float",
+   "label": "Candidate Auto Match Threshold"
+  },
+  {
+   "default": "70",
+   "fieldname": "candidate_review_threshold",
+   "fieldtype": "Float",
+   "label": "Candidate Review Threshold"
+  },
+  {
+   "fieldname": "column_break_dup_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "25",
+   "fieldname": "email_match_weight",
+   "fieldtype": "Float",
+   "label": "Email Match Weight"
+  },
+  {
+   "default": "25",
+   "fieldname": "mobile_match_weight",
+   "fieldtype": "Float",
+   "label": "Mobile Match Weight"
+  },
+  {
+   "default": "40",
+   "fieldname": "identity_match_weight",
+   "fieldtype": "Float",
+   "label": "Identity Match Weight"
+  },
+  {
+   "default": "5",
+   "fieldname": "name_match_weight",
+   "fieldtype": "Float",
+   "label": "Name Match Weight"
+  },
+  {
+   "default": "5",
+   "fieldname": "date_of_birth_match_weight",
+   "fieldtype": "Float",
+   "label": "Date Of Birth Match Weight"
+  },
+  {
+   "default": "0",
+   "fieldname": "address_match_weight",
+   "fieldtype": "Float",
+   "label": "Address Match Weight"
+  },
+  {
+   "fieldname": "section_break_dup_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "reject_exact_duplicate_cv",
+   "fieldtype": "Check",
+   "label": "Reject Exact Duplicate CV"
+  },
+  {
+   "default": "1",
+   "fieldname": "allow_updated_cv",
+   "fieldtype": "Check",
+   "label": "Allow Updated CV"
+  },
+  {
+   "fieldname": "duplicate_submission_message",
+   "fieldtype": "Small Text",
+   "label": "Duplicate Submission Message"
+  },
+  {
+   "fieldname": "geographic_matching_tab",
+   "fieldtype": "Tab Break",
+   "label": "Geographic Matching"
+  },
+  {
+   "default": "1",
+   "fieldname": "enable_address_matching",
+   "fieldtype": "Check",
+   "label": "Enable Address Matching"
+  },
+  {
+   "default": "85",
+   "fieldname": "auto_geographic_match_threshold",
+   "fieldtype": "Float",
+   "label": "Auto Geographic Match Threshold"
+  },
+  {
+   "default": "60",
+   "fieldname": "review_geographic_match_threshold",
+   "fieldtype": "Float",
+   "label": "Review Geographic Match Threshold"
+  },
+  {
+   "fieldname": "column_break_geomatch_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "enable_branch_area_matching",
+   "fieldtype": "Check",
+   "label": "Enable Branch Area Matching"
+  },
+  {
+   "fieldname": "allow_ai_geographic_matching",
+   "fieldtype": "Check",
+   "label": "Allow AI Geographic Matching"
+  },
+  {
+   "fieldname": "branch_geographic_areas_tab",
+   "fieldtype": "Tab Break",
+   "label": "Branch Geographic Areas"
+  },
+  {
+   "fieldname": "branch_geographic_areas",
+   "fieldtype": "Table",
+   "label": "Branch Geographic Areas",
+   "options": "ZA Branch Geographic Area Setting"
+  },
+  {
+   "default": "1",
+   "description": "When enabled, a daily background job emails every HR Manager if any active Geographic Area below has no Branch mapped to it.",
+   "fieldname": "enable_unmapped_area_reminders",
+   "fieldtype": "Check",
+   "label": "Enable Unmapped Area Reminders"
+  },
+  {
+   "fieldname": "sharepoint_tab",
+   "fieldtype": "Tab Break",
+   "label": "SharePoint"
+  },
+  {
+   "fieldname": "enable_sharepoint_watch",
+   "fieldtype": "Check",
+   "label": "Enable SharePoint Watch"
+  },
+  {
+   "fieldname": "sharepoint_watch_folders",
+   "fieldtype": "Table",
+   "label": "SharePoint Watch Folders",
+   "options": "ZA SharePoint Watch"
+  },
+  {
+   "fieldname": "recruitment_email_tab",
+   "fieldtype": "Tab Break",
+   "label": "Recruitment Email"
+  },
+  {
+   "fieldname": "enable_recruitment_email",
+   "fieldtype": "Check",
+   "label": "Enable Recruitment Email"
+  },
+  {
+   "fieldname": "recruitment_email_account",
+   "fieldtype": "Link",
+   "label": "Recruitment Email Account",
+   "options": "Email Account"
+  },
+  {
+   "fieldname": "default_email_source",
+   "fieldtype": "Link",
+   "label": "Default Email Source",
+   "options": "Job Applicant Source"
+  },
+  {
+   "default": "1",
+   "fieldname": "process_email_attachments",
+   "fieldtype": "Check",
+   "label": "Process Email Attachments"
+  },
+  {
+   "default": ".pdf,.doc,.docx",
+   "fieldname": "allowed_email_attachment_types",
+   "fieldtype": "Small Text",
+   "label": "Allowed Email Attachment Types"
+  },
+  {
+   "fieldname": "column_break_email_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "move_processed_email",
+   "fieldtype": "Check",
+   "label": "Move Processed Email"
+  },
+  {
+   "fieldname": "processed_mail_folder",
+   "fieldtype": "Data",
+   "label": "Processed Mail Folder"
+  },
+  {
+   "fieldname": "move_rejected_email",
+   "fieldtype": "Check",
+   "label": "Move Rejected Email"
+  },
+  {
+   "fieldname": "rejected_mail_folder",
+   "fieldtype": "Data",
+   "label": "Rejected Mail Folder"
+  },
+  {
+   "fieldname": "ai_configuration_tab",
+   "fieldtype": "Tab Break",
+   "label": "AI Configuration"
+  },
+  {
+   "default": "OpenAI / ChatGPT",
+   "fieldname": "ai_provider",
+   "fieldtype": "Select",
+   "label": "AI Provider",
+   "options": "OpenAI / ChatGPT\nAzure OpenAI\nOllama\nOther (OpenAI-Compatible)"
+  },
+  {
+   "description": "Base URL for an OpenAI-compatible API, e.g. https://api.openai.com/v1 or http://localhost:11434/v1 for a local Ollama server.",
+   "fieldname": "ai_endpoint",
+   "fieldtype": "Data",
+   "label": "AI Endpoint"
+  },
+  {
+   "description": "e.g. gpt-4o-mini or llama3.1",
+   "fieldname": "ai_model",
+   "fieldtype": "Data",
+   "label": "AI Model"
+  },
+  {
+   "description": "Not required for a local Ollama server.",
+   "fieldname": "ai_api_key",
+   "fieldtype": "Password",
+   "label": "AI API Key"
+  },
+  {
+   "fieldname": "column_break_ai_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.2",
+   "fieldname": "ai_temperature",
+   "fieldtype": "Float",
+   "label": "AI Temperature"
+  },
+  {
+   "default": "60",
+   "fieldname": "ai_timeout_seconds",
+   "fieldtype": "Int",
+   "label": "AI Timeout (Seconds)"
+  },
+  {
+   "default": "2",
+   "fieldname": "ai_retry_count",
+   "fieldtype": "Int",
+   "label": "AI Retry Count"
+  },
+  {
+   "fieldname": "section_break_ai_2",
+   "fieldtype": "Section Break",
+   "label": "Privacy & Governance"
+  },
+  {
+   "default": "1",
+   "fieldname": "redact_pii_before_ai",
+   "fieldtype": "Check",
+   "label": "Redact PII Before AI"
+  },
+  {
+   "default": "1",
+   "fieldname": "exclude_demographics_from_screening",
+   "fieldtype": "Check",
+   "label": "Exclude Demographics From Screening"
+  },
+  {
+   "default": "1",
+   "description": "Strips hidden/invisible PDF text and scans extracted CV text for known prompt-injection phrasing (za_recruitment.ai.prompt_injection) before any content reaches an AI prompt. Recommended to keep enabled — disabling it does not disable the visible-text extraction itself, only the injection-phrase scan and the resulting flag on ZA Recruitment Ingestion.",
+   "fieldname": "scan_for_prompt_injection",
+   "fieldtype": "Check",
+   "label": "Scan For Prompt Injection"
+  },
+  {
+   "default": "Flag For Review",
+   "depends_on": "eval:doc.scan_for_prompt_injection",
+   "fieldname": "prompt_injection_action",
+   "fieldtype": "Select",
+   "label": "Prompt Injection Action",
+   "options": "Flag For Review\nReject\nStrip And Continue"
+  },
+  {
+   "fieldname": "store_raw_ai_response",
+   "fieldtype": "Check",
+   "label": "Store Raw AI Response"
+  },
+  {
+   "fieldname": "store_prompt",
+   "fieldtype": "Check",
+   "label": "Store Prompt"
+  },
+  {
+   "fieldname": "column_break_ai_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ai_processing_region",
+   "fieldtype": "Data",
+   "label": "AI Processing Region"
+  },
+  {
+   "fieldname": "allow_external_ai_processing",
+   "fieldtype": "Check",
+   "label": "Allow External AI Processing"
+  },
+  {
+   "fieldname": "recruitment_portal_integrations_tab",
+   "fieldtype": "Tab Break",
+   "label": "Recruitment Portal Integrations"
+  },
+  {
+   "fieldname": "enable_recruitment_portal_integrations",
+   "fieldtype": "Check",
+   "label": "Enable Recruitment Portal Integrations"
+  },
+  {
+   "fieldname": "portal_integrations",
+   "fieldtype": "Table",
+   "label": "Portal Integrations",
+   "options": "ZA Recruitment Portal Setting"
+  },
+  {
+   "fieldname": "storage_retention_tab",
+   "fieldtype": "Tab Break",
+   "label": "Storage / Retention"
+  },
+  {
+   "default": "1",
+   "fieldname": "enable_retention_cleanup",
+   "fieldtype": "Check",
+   "label": "Enable Retention Cleanup"
+  },
+  {
+   "default": "18",
+   "fieldname": "candidate_stale_after_months",
+   "fieldtype": "Int",
+   "label": "Candidate Stale After (Months)"
+  },
+  {
+   "default": "12",
+   "fieldname": "cv_stale_after_months",
+   "fieldtype": "Int",
+   "label": "CV Stale After (Months)"
+  },
+  {
+   "fieldname": "delete_stale_cv_files",
+   "fieldtype": "Check",
+   "label": "Delete Stale CV Files"
+  },
+  {
+   "default": "1",
+   "fieldname": "retain_candidate_record_after_file_deletion",
+   "fieldtype": "Check",
+   "label": "Retain Candidate Record After File Deletion"
+  },
+  {
+   "fieldname": "column_break_store_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "60",
+   "fieldname": "temporary_upload_ttl_minutes",
+   "fieldtype": "Int",
+   "label": "Temporary Upload TTL (Minutes)"
+  },
+  {
+   "default": "1",
+   "fieldname": "orphan_file_cleanup_enabled",
+   "fieldtype": "Check",
+   "label": "Orphan File Cleanup Enabled"
+  },
+  {
+   "default": "100",
+   "fieldname": "cleanup_batch_size",
+   "fieldtype": "Int",
+   "label": "Cleanup Batch Size"
+  },
+  {
+   "default": "1",
+   "fieldname": "legal_hold_overrides_cleanup",
+   "fieldtype": "Check",
+   "label": "Legal Hold Overrides Cleanup"
+  },
+  {
+   "fieldname": "scheduling_tab",
+   "fieldtype": "Tab Break",
+   "label": "Scheduling"
+  },
+  {
+   "fieldname": "enable_sharepoint_polling",
+   "fieldtype": "Check",
+   "label": "Enable SharePoint Polling"
+  },
+  {
+   "fieldname": "enable_email_polling",
+   "fieldtype": "Check",
+   "label": "Enable Email Polling"
+  },
+  {
+   "fieldname": "enable_stale_cleanup",
+   "fieldtype": "Check",
+   "label": "Enable Stale Cleanup"
+  },
+  {
+   "fieldname": "enable_storage_audit",
+   "fieldtype": "Check",
+   "label": "Enable Storage Audit"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-08-18 15:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "ZA Recruitment",
+ "name": "ZA Recruitment Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

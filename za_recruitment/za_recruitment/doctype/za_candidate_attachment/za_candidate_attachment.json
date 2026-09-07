@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "creation": "2026-08-19 19:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "attachment_type",
+  "description",
+  "location",
+  "page_range",
+  "verified",
+  "file",
+  "candidate_cv",
+  "ingestion",
+  "match_confidence",
+  "auto_classified"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "attachment_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Attachment Type",
+   "options": "ZA Attachment Type"
+  },
+  {
+   "columns": 3,
+   "description": "The specific detected document title where one was found (e.g. 'National Senior Certificate'), otherwise the Attachment Type's own name.",
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "columns": 2,
+   "default": "Attached to CV",
+   "description": "Attached to CV = this is a page range within the main CV file below, not a separate upload. Attached Here = a standalone file on this row.",
+   "fieldname": "location",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Location",
+   "options": "Attached to CV\nAttached Here"
+  },
+  {
+   "columns": 1,
+   "fieldname": "page_range",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Page Range"
+  },
+  {
+   "columns": 1,
+   "fieldname": "verified",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Verified"
+  },
+  {
+   "fieldname": "file",
+   "fieldtype": "Attach",
+   "label": "File"
+  },
+  {
+   "fieldname": "candidate_cv",
+   "fieldtype": "Link",
+   "label": "Candidate CV",
+   "options": "ZA Candidate CV"
+  },
+  {
+   "fieldname": "ingestion",
+   "fieldtype": "Link",
+   "label": "Ingestion",
+   "options": "ZA Recruitment Ingestion"
+  },
+  {
+   "fieldname": "match_confidence",
+   "fieldtype": "Float",
+   "label": "Match Confidence",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "auto_classified",
+   "fieldtype": "Check",
+   "label": "Auto Classified",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-08-19 19:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "ZA Recruitment",
+ "name": "ZA Candidate Attachment",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

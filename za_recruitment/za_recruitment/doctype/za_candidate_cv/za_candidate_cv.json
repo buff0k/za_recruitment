@@ -1,0 +1,259 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-08-18 09:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "general_section",
+  "candidate",
+  "cv_version",
+  "file",
+  "original_filename",
+  "received_on",
+  "column_break_gen_1",
+  "source",
+  "ingestion",
+  "file_size",
+  "mime_type",
+  "fingerprint_section",
+  "sha_256",
+  "text_hash",
+  "column_break_fp_1",
+  "duplicate_of",
+  "exact_duplicate",
+  "extracted_content_section",
+  "extracted_text",
+  "lifecycle_section",
+  "status",
+  "current",
+  "stale",
+  "stale_since",
+  "column_break_life_1",
+  "file_removed",
+  "file_removed_on",
+  "retention_until",
+  "legal_hold"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_section",
+   "fieldtype": "Section Break",
+   "label": "General"
+  },
+  {
+   "fieldname": "candidate",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Candidate",
+   "options": "ZA Candidate",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "cv_version",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "CV Version"
+  },
+  {
+   "fieldname": "file",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "File"
+  },
+  {
+   "fieldname": "original_filename",
+   "fieldtype": "Data",
+   "label": "Original Filename",
+   "read_only": 1
+  },
+  {
+   "fieldname": "received_on",
+   "fieldtype": "Datetime",
+   "label": "Received On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gen_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Link",
+   "label": "Source",
+   "options": "Job Applicant Source"
+  },
+  {
+   "fieldname": "ingestion",
+   "fieldtype": "Link",
+   "label": "Ingestion",
+   "options": "ZA Recruitment Ingestion",
+   "read_only": 1
+  },
+  {
+   "fieldname": "file_size",
+   "fieldtype": "Int",
+   "label": "File Size (Bytes)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mime_type",
+   "fieldtype": "Data",
+   "label": "MIME Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fingerprint_section",
+   "fieldtype": "Section Break",
+   "label": "Fingerprint"
+  },
+  {
+   "fieldname": "sha_256",
+   "fieldtype": "Data",
+   "label": "SHA-256",
+   "read_only": 1
+  },
+  {
+   "fieldname": "text_hash",
+   "fieldtype": "Data",
+   "label": "Text Hash",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_fp_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "duplicate_of",
+   "fieldtype": "Link",
+   "label": "Duplicate Of",
+   "options": "ZA Candidate CV",
+   "read_only": 1
+  },
+  {
+   "fieldname": "exact_duplicate",
+   "fieldtype": "Check",
+   "label": "Exact Duplicate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "extracted_content_section",
+   "fieldtype": "Section Break",
+   "label": "Extracted Content"
+  },
+  {
+   "description": "Populated by za_recruitment.ingestion.text_extraction. Hidden/invisible PDF spans and hidden DOCX runs are already excluded (za_recruitment.ai.prompt_injection) -- this is what any future AI parsing step would receive, never the raw uploaded document.",
+   "fieldname": "extracted_text",
+   "fieldtype": "Long Text",
+   "label": "Extracted Text",
+   "read_only": 1
+  },
+  {
+   "fieldname": "lifecycle_section",
+   "fieldtype": "Section Break",
+   "label": "Lifecycle"
+  },
+  {
+   "default": "Current",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Current\nHistorical\nDuplicate\nParsing\nParsed\nFailed\nStale\nFile Removed"
+  },
+  {
+   "default": "1",
+   "fieldname": "current",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Current"
+  },
+  {
+   "fieldname": "stale",
+   "fieldtype": "Check",
+   "label": "Stale"
+  },
+  {
+   "fieldname": "stale_since",
+   "fieldtype": "Date",
+   "label": "Stale Since",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_life_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "file_removed",
+   "fieldtype": "Check",
+   "label": "File Removed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "file_removed_on",
+   "fieldtype": "Datetime",
+   "label": "File Removed On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "retention_until",
+   "fieldtype": "Date",
+   "label": "Retention Until"
+  },
+  {
+   "fieldname": "legal_hold",
+   "fieldtype": "Check",
+   "label": "Legal Hold"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-08-18 16:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "ZA Recruitment",
+ "name": "ZA Candidate CV",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
