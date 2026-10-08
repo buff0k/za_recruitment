@@ -1,0 +1,26 @@
+{
+ "app": "za_recruitment",
+ "doctype": "Sidebar",
+ "header_icon": null,
+ "items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "doctype": "Sidebar Item",
+   "idx": 1,
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Home",
+   "link_to": "ZA Recruitment",
+   "link_type": "Workspace",
+   "parentfield": "items",
+   "parenttype": "Sidebar",
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "module": "ZA Recruitment",
+ "name": "ZA Recruitment",
+ "standard": 1,
+ "title": "ZA Recruitment"
+}

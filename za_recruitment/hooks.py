@@ -10,16 +10,19 @@ app_license = "mit"
 
 required_apps = ["hrms"]
 
-# Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "za_recruitment",
-# 		"logo": "/assets/za_recruitment/logo.png",
-# 		"title": "ZA Recruitment",
-# 		"route": "/za_recruitment",
-# 		"has_permission": "za_recruitment.api.permission.has_app_permission"
-# 	}
-# ]
+# Each item in the list will be shown as an app in the apps page.
+# No logo: no asset exists for this app yet (the scaffolded template path,
+# /assets/za_recruitment/logo.png, was never actually created). No
+# has_permission: same thing - za_recruitment.api.permission.has_app_permission
+# doesn't exist in this app, so leaving it out rather than pointing at a
+# function that would error when the Apps screen tries to call it.
+add_to_apps_screen = [
+	{
+		"name": "za_recruitment",
+		"title": "ZA Recruitment",
+		"route": "/desk/za-recruitment",
+	}
+]
 
 # Includes in <head>
 # ------------------
